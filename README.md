@@ -4,11 +4,21 @@
 - PHP (Version PHP 8.4.3 or later)
 - SQLite
 - Composer (2.8.5 For managing PHP dependencies)
+- Docker 
 
 
 ## Environment Variables
 - Frontend: Rename .env.example to .env.local and update the values.
-- Backend: Rename .env.example to .env and configure database settings.
+```
+NEXT_PUBLIC_API_BASE_URL
+```
+- Backend: Rename .env.example to .env and update the following environment variables.
+```
+APP_KEY
+GUARDIANAPI_KEY
+NEWSAPI_KEY
+NYAPI_KEY
+```
 
 
 ## Setting Up the Frontend (Next.js)
@@ -49,10 +59,6 @@
 
 
 ## Run via docker-compose
-
-### Environment Variables
-- Frontend: Rename .env.example to .env.local and update the values.
-- Backend: Rename .env.example to .env and configure database settings.
 
 ### Run the application
 - docker-compose up -d
