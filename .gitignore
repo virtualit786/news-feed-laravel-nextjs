@@ -1,0 +1,65 @@
+# OS-specific files
+.DS_Store
+Thumbs.db
+.history
+.qodo
+
+# Editor/IDE settings
+.fleet/
+.idea/
+.nova/
+.vscode/
+.zed/
+
+# Environment and local configuration files
+.env
+.env.local
+.env.backup
+.env.production
+auth.json
+
+# Logs & Debug files
+npm-debug.log
+yarn-error.log
+*.log
+*.sqlite
+
+# PHPUnit cache
+.phpunit.cache
+.phpunit.result.cache
+
+# Laravel-specific ignores (api/)
+api/vendor/
+api/node_modules/
+api/bootstrap/cache/
+api/storage/*.key
+api/storage/pail
+api/public/storage
+api/storage/app/*
+api/storage/framework/cache/*
+api/storage/framework/sessions/*
+api/storage/framework/views/*
+api/storage/logs/*
+
+# Allow public storage for user uploads
+!/api/storage/app/public
+
+# Laravel configuration & Homestead files
+api/Homestead.json
+api/Homestead.yaml
+
+# Next.js-specific ignores (client/)
+client/.next/
+client/out/
+client/node_modules/
+client/.env
+client/.yarn
+client/.env.local
+client/.env.development
+client/.env.production
+client/.env.backup
+client/.eslintcache
+
+# Build & Dependency files
+public/build
+public/hot

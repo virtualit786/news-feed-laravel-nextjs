@@ -1,0 +1,49 @@
+.is-error {
+    :global {
+        .p-dropdown {
+            background-color: var(--white);
+            border-color: 1px solid var(--begonia);
+        }
+    }
+}
+
+.product-action-dropdown {
+    background: var(--white);
+    border: 1px solid var(--grey-100);
+    border-radius: 3px;
+    width: auto;
+    margin-left: 8px;
+
+    :global {
+        .p-dropdown-trigger {
+            color: var(--gunSmoke);
+            width: 2rem;
+        }
+
+        .pi {
+            font-size: 12px;
+        }
+
+        .p-dropdown-label {
+            &.p-placeholder {
+                font-family: var(--ffNS-500);
+                font-style: normal;
+                font-size: 11px;
+                line-height: 14px;
+                
+
+                color: var(--text-secondary-color);
+            }
+        }
+    }
+}
+
+.primary-dropdown {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 4px;
+    border: 1px solid var(--input-border);
+    background: var(--surface-section);
+}

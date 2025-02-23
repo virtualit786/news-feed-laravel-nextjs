@@ -1,0 +1,37 @@
+button {
+
+    &.btn-icon,
+    &.btn-transparent {
+        background: transparent;
+        color: var(--white);
+        font-style: normal;
+        font-family: var(--ffNS-700);
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+        border-radius: 99999px;
+        cursor: pointer;
+        border: 1px solid transparent;
+        border-color: transparent;
+
+        &:focus {
+            box-shadow: 0 0 0 0.25rem rgba(var(--caribbeanGreen), .3);
+            border-color: transparent;
+            background: transparent;
+            color: var(--caribbeanGreen);
+        }
+
+        &:focus-visible {
+            outline: rgba(var(--caribbeanGreen), .3) auto 1px;
+        }
+
+        &:enabled:hover,
+        &:not(button):not(a):not(.p-disabled):hover,
+        &:enabled:active,
+        &:not(button):not(a):not(.p-disabled):active {
+            background: transparent;
+            color: var(--caribbeanGreen);
+            border-color: transparent;
+        }
+    }
+}
